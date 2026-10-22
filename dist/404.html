@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bike Logbook</title>
+    <script>
+      // The app uses hash routes, so any unknown path just goes back to the app root.
+      // On project pages the first path segment is the repo name: /<repo-name>/...
+      var repo = location.pathname.split('/')[1];
+      location.replace('/' + (repo ? repo + '/' : ''));
+    </script>
+  </head>
+  <body></body>
+</html>
